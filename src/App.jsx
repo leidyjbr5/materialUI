@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Container } from '@mui/material'
 import Searcher from './components/searcher'
+import UserCard from './containers/userCard'
 import { getGithubUser } from './services/users'
 import { useEffect } from 'react';
 
@@ -41,6 +42,7 @@ const App = () => {
   return(
     <Container sx={containerStyles}>
       <Searcher inputUser={inputUser} setInputUser={setInputUser} />
+      <UserCard data={data}/>
     </Container>
   )
 }
