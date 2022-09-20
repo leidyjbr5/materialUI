@@ -18,10 +18,7 @@ const iconButtonStyles = {
 
 const Searcher = (props) => {
 
-  const {
-    inputUser,
-    setInputUser
-  } = props
+  const { setInputUser } = props
 
   const [valueInput, setValueInput] = useState('')
 
