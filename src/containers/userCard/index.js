@@ -6,7 +6,6 @@ import { CardMedia, Grid } from '@mui/material'
 const UserCard = (props) => {
   const {data} = props
   const {avatar_url} = data
-  console.log(avatar_url)
 
   return(
     <Grid container spacing={2}>
