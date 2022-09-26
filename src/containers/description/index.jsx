@@ -8,10 +8,10 @@ const Description = (props) => {
   const { bio } = data
   return (
     <Fragment>
-      <Stack>
+      <Stack sx={{justifyContent: 'center'}}>
         {bio !== null
-         ?<Typography> {bio} </Typography>
-         :<Typography> Lorem ipsum </Typography>
+         ?<Typography variant="body1"> {bio} </Typography>
+         :<Typography variant="body1"> Lorem ipsum </Typography>
         }
 
       </Stack>

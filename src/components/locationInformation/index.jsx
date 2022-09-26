@@ -15,9 +15,13 @@ const LocationInformation = (props) => {
   } = data
 
   return (
-    <Grid container>
+    <Grid 
+      container
+      spacing={2}
+      sx={{marginTop: '15px'}}
+    >
       <Grid item xs={6}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <LocationOnIcon />
           <Typography>
             {location}
@@ -25,7 +29,7 @@ const LocationInformation = (props) => {
         </Stack>
       </Grid>
       <Grid item xs={6}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <TwitterIcon />
           <Typography>
             {twitter_username}
@@ -33,15 +37,15 @@ const LocationInformation = (props) => {
         </Stack>
       </Grid>
       <Grid item xs={6}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <LanguageIcon />
-          <Typography>
+          <a target="_blank" href={blog}><Typography>
             {blog}
-          </Typography>
+          </Typography></a>
         </Stack>
       </Grid>
       <Grid item xs={6}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <BusinessIcon />
           <Typography>
             {company}
